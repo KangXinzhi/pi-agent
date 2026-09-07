@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Run formatting, linting, and type checking before commit.
+npm run check
+if [ $? -ne 0 ]; then
+	echo "Checks failed. Please fix the errors before committing."
+	exit 1
+fi
+
+# Restage files that may have been modified by formatting.
+git diff --cached --name-only | while read -r file; do
+	if [ -f "$file" ]; then
+		git add "$file"
+	fi
+done
+
+echo "All pre-commit checks passed."

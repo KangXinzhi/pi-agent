@@ -1,0 +1,13 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"noEmit": true
+	},
+	"include": [
+		"packages/*/src/**/*.ts",
+		"packages/*/test/**/*.ts",
+		"packages/session-backends/*/src/**/*.ts",
+		"packages/session-backends/*/test/**/*.ts"
+	],
+	"exclude": ["**/node_modules/**", "**/dist/**"]
+}

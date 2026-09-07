@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.artifacts/
+*.log
+*.tsbuildinfo
+*.cpuprofile
+.DS_Store
+
+# Environment
+.env
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Package specific
+coverage/
+.npm/
+.npi_config/
