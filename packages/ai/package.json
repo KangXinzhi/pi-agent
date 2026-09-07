@@ -1,0 +1,12 @@
+{
+	"name": "@pi-agent/ai",
+	"version": "0.1.0",
+	"description": "统一多 Provider LLM API（A2 最小实现：openai-responses 传输 + env 认证）",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"test": "tsx --test test/*.test.ts"
+	}
+}
